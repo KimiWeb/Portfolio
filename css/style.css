@@ -106,6 +106,9 @@ section#koulutus {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
+#koulutus a:hover {
+  color: #000000;
+  }
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: #0070AB;
