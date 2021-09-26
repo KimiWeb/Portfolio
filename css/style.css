@@ -1,0 +1,265 @@
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+}
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+.navbar {
+  list-style: none;
+  font-weight: 700;
+  background-color: #ffffff;
+  z-index: 10;
+}
+.navbar a {
+  color: #000000;
+  font-size: 18px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #000000;
+}
+.navbar-expand-sm .navbar-collapse {
+  justify-content: center;
+}
+.ml-auto, .mx-auto {
+  margin-left: unset!important;
+}
+
+#koti {
+  min-height: 725px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1.display-4 {
+  font-size: 52px;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  font-weight: 700;
+}
+section#koti p {
+  font-size: 22px;
+  color: #000000;
+}
+
+.scroll-left {
+  height: 75px;	
+  overflow: hidden;
+  position: relative;
+  background: #0070AB;
+  color: #ffffff;
+ }
+ .scroll-left p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 32px;
+  width: 150%;
+  height: 100%;
+  line-height: 40px;
+  transform:translateX(100%);
+  animation: scroll-left 25s linear infinite;
+ }
+ @media only screen and (max-width: 1064px) {
+  .scroll-left p {
+    width: 300%;  
+   }
+ }
+ @media only screen and (max-width: 600px) {
+  .scroll-left p {
+    width: 500%;  
+   }
+ }
+ @keyframes scroll-left {
+  0%   {
+  transform: translateX(100%); 		
+  }
+  100% {
+  transform: translateX(-100%); 
+  }
+ }
+
+.d-flex {
+  color: #000000;
+}
+
+section#koulutus {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+#koulutus a {
+  color: #0070ab;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #0070AB;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  opacity: 0.8;
+}
+.accordion:after {
+  content: '\002B';
+  color: #ffffff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+.panel {
+  padding: 0 18px;
+  background-color: #D2F5FF;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel p {
+  padding: 20px;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+h3  { 
+color: #000000;
+font-family: "Montserrat", sans-serif;
+}
+
+#projektit { 
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  margin: 50px 0px 50px 0px;
+}
+h2{
+  color: #000000;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+h4 { 
+  color: #ffffff;
+  font-size: 28px;
+  font-family: "Montserrat", sans-serif;
+  }
+h5 { 
+  color: #000000;
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  }
+#yhteystiedot { 
+  text-align: center;
+  align-content: center;
+  background-color: #0070AB!important;
+  }
+  #yhteystiedot h4 { 
+    font-weight: bold;
+    }
+  label {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 20px 0px 0px 0px;
+}
+#yhteystiedot p {  
+    color: #ffffff;
+    font-weight: 700;
+}
+#yhteystiedot a {
+  color: #000000;
+  font-weight: 700;
+}
+#yhteystiedot a:hover {
+  color: #00000096;
+  text-decoration: none;
+}
+#yhteystiedot .img-fluid {
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+div#yhteys-kortti {
+  padding: 50px;
+  -webkit-box-shadow: 1px 1px 10px 1px #000000; 
+  box-shadow: 1px 1px 20px 1px #000000;
+  background-color: #ff8721!important;
+}
+footer#alatunniste {
+  background-color: #0070ab!important;
+}
+.card {
+  background-color: #0070ab;
+  color: #ffffff;
+  /*-webkit-box-shadow: 1px 1px 10px 1px #000000; 
+  box-shadow: 1px 1px 10px 1px #000000;*/
+}
+.card-deck {
+  margin: 50px 0px 50px 0px;
+}
+.card a {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.card a:hover {
+  transform: scale(1.25) perspective(1px);
+  cursor: pointer;
+  text-decoration: none;
+}
+img.card-img-top {
+  object-fit: cover;
+  height: 250px;
+}
+footer#alatunniste p {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 22px;
+}
+.text-muted {
+  color: #ffffff!important;
+  font-weight: 700;
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 2px solid #2AABE4;
+}
+.fa-github {
+  background: #ffffff00;
+  color: #ffffff;
+  font-size:48px;
+}
